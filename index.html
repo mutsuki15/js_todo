@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>todoリスト</h1>
+      <!-- 2. class属性をCSSのために指定 -->
+      <div class="todoapp">
+        <!-- 3. id属性をJavaScriptのために指定 -->
+        <form class="col-6" id="js-form">
+          <input
+            id="js-form-input"
+            class="form-control"
+            type="text"
+            placeholder="アイテムを入力してください"
+            autocomplete="off"
+          />
+        </form>
+        <button id="js-create-button" type="button" class="mt-2 btn btn-primary">作成</button>
+        <!-- 4. TodoアプリのメインとなるTodoリスト -->
+        <div id="js-todo-list" class="todo-list">
+          <!-- 動的に更新されるTodoリスト -->
+        </div>
+        <footer class="footer mt-3">
+          <!-- 5. Todoアイテム数の表示 -->
+          <span id="js-todo-count">全てのタスク：0 完了済み：0 未完了：0</span>
+        </footer>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
